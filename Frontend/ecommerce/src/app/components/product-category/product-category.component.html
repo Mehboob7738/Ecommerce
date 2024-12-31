@@ -1,0 +1,20 @@
+<!-- MENU SIDEBAR-->
+<aside class="menu-sidebar d-none d-lg-block">
+    <div class="logo">
+        <a href="home.html">
+            <img src="https://storage.googleapis.com/a1aa/image/50767cc3-9e09-4490-8d43-bf13b24af2b4.jpeg" style="margin-top: 10px; width: 100px; height: 70px;" alt="luv2shop" class="img-responsive">
+        </a>
+    </div>
+    <div class="menu-sidebar-content js-scrollbar1">
+        <nav class="navbar-sidebar">
+            <ul class="list-unstyled navbar-list">
+                <li *ngFor="let productCategory of productCategories" >
+                    <a routerLink="/category/{{productCategory.id}}" routerLink="active-link">{{productCategory.categoryName}}</a>
+
+                </li>
+                
+            </ul>
+        </nav>
+    </div>
+</aside>
+<!-- END MENU SIDEBAR-->
